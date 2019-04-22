@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>猫眼专业版-实时票房</title>
+    <!--// dns prefetch -->
+    <link rel="dns-prefetch" href="//analytics.meituan.com" />
+    <link rel="dns-prefetch" href="//ms0.meituan.net" />
+    <link rel="dns-prefetch" href="//mc.meituan.net" />
+    <link rel="dns-prefetch" href="//s0.meituan.net" />
+    <link rel="dns-prefetch" href="//p0.meituan.net" />
+    <link rel="dns-prefetch" href="//p1.meituan.net" />
+    <!--// meta section -->
+    <meta charset="utf-8">
+    <meta name="keywords" content="猫眼票房分析,猫眼电影,电影票房,实时票房,日票房,预售票房,影片票房趋势,受众画像,实时排片,预售排片,上座率,历史票房" />
+    <meta name="description" content="猫眼票房分析，提供最准确的每日电影实时票房、排片、上座率查询，为电影从业者提供最及时、专业的数据分析服务" />
+    <meta http-equiv="cleartype" content="yes" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta http-equiv="Cache-Control" CONTENT="no-cache" />
+    <meta http-equiv="Pragma" CONTENT="no-cache" />
+    <meta http-equiv="cache-control" CONTENT="no-store" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="renderer" content="webkit">
+    <link rel="icon" type="image/x-icon" href="//ms0.meituan.net/piaofang/img/favicon.ico" />
+    <!--// apple webapp -->
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <!--// viewport -->
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1, maximum-scale=1, user-scalable=no" />
+    
+    <link rel="stylesheet" href="//ms0.meituan.net/piaofang/react/css/common-be69d5d2.css" >
+    
+    <link rel="stylesheet" href="//ms0.meituan.net/piaofang/react/css/pages-dashboard-9bec3759.css" >
+    
+    <script>
+      (function() {
+        var timer = null;
+        function scale() {
+          var html = document.documentElement;
+          var r = html.clientWidth/1920;
+          html.style.fontSize = Math.ceil(r*100) + 'px';
+          html.classList.add('responsive');
+          var s = html.clientWidth/html.clientHeight;
+          if (s < 1.5) {
+            html.classList.add('narrow');
+          } else {
+            html.classList.remove('narrow');
+          }
+          timer = null;
+        }
+        window.onresize = function() {
+          if (timer) clearTimeout(timer);
+          timer = setTimeout(scale, 100);
+        }
+        scale();
+      })();
+    </script>
+  </head>
+  <body>
+    <div id="app"><div class="dashboard-page" data-reactid=".18ryyz0q866"><div class="dashboard" data-reactid=".18ryyz0q866.0"><div class="dashboard-title" data-reactid=".18ryyz0q866.0.0"><span class="dashboard-nav" data-reactid=".18ryyz0q866.0.0.0"><span class="active" data-reactid=".18ryyz0q866.0.0.0.0">综合票房</span><span class="" data-reactid=".18ryyz0q866.0.0.0.1">分账票房</span></span><div class="dashboard-title-clock" data-reactid=".18ryyz0q866.0.0.1"><span class="sprite sprite-logo" data-reactid=".18ryyz0q866.0.0.1.0"></span><span class="clock" data-reactid=".18ryyz0q866.0.0.1.1"><span data-reactid=".18ryyz0q866.0.0.1.1.0"><span data-reactid=".18ryyz0q866.0.0.1.1.0.0"><span data-reactid=".18ryyz0q866.0.0.1.1.0.0.0">2017</span><span data-reactid=".18ryyz0q866.0.0.1.1.0.0.1">年</span><span data-reactid=".18ryyz0q866.0.0.1.1.0.0.2">11</span><span data-reactid=".18ryyz0q866.0.0.1.1.0.0.3">月</span><span data-reactid=".18ryyz0q866.0.0.1.1.0.0.4">11</span><span data-reactid=".18ryyz0q866.0.0.1.1.0.0.5">日</span></span><span data-reactid=".18ryyz0q866.0.0.1.1.0.1"> </span><span data-reactid=".18ryyz0q866.0.0.1.1.0.2"><span data-reactid=".18ryyz0q866.0.0.1.1.0.2.0">08</span><span data-reactid=".18ryyz0q866.0.0.1.1.0.2.1">:</span><span data-reactid=".18ryyz0q866.0.0.1.1.0.2.2">53</span></span></span></span></div><div class="dashboard-title-group" data-reactid=".18ryyz0q866.0.0.2"><div class="dashboard-title-togglefullscreen button" data-reactid=".18ryyz0q866.0.0.2.0">全屏</div><div class="dashboard-title-link button" data-reactid=".18ryyz0q866.0.0.2.1"><a href="/?ver=normal" data-reactid=".18ryyz0q866.0.0.2.1.0"><span data-reactid=".18ryyz0q866.0.0.2.1.0.0">返回常规版</span><span class="sprite sprite-arrow" data-reactid=".18ryyz0q866.0.0.2.1.0.1"></span></a></div></div></div><div class="dashboard-content" data-reactid=".18ryyz0q866.0.1"><div class="dashboard-left" data-reactid=".18ryyz0q866.0.1.0"><div class="dashboard-detail bg" data-reactid=".18ryyz0q866.0.1.0.0"><div class="movie-hint" data-reactid=".18ryyz0q866.0.1.0.0.0"><span data-reactid=".18ryyz0q866.0.1.0.0.0.0">点击 </span><span class="sprite sprite-star-big" data-reactid=".18ryyz0q866.0.1.0.0.0.1"></span><span data-reactid=".18ryyz0q866.0.1.0.0.0.2"> 优先展示</span></div></div><div class="dashboard-push" data-reactid=".18ryyz0q866.0.1.0.1"></div><div class="dashboard-calendar bg" data-reactid=".18ryyz0q866.0.1.0.2"></div></div><div class="dashboard-list bg" data-reactid=".18ryyz0q866.0.1.1"><table class="dashboard-table dashboard-table-header" data-reactid=".18ryyz0q866.0.1.1.0"><thead data-reactid=".18ryyz0q866.0.1.1.0.0"><tr data-reactid=".18ryyz0q866.0.1.1.0.0.0"><th class="moviename-th" data-reactid=".18ryyz0q866.0.1.1.0.0.0.0"><div data-reactid=".18ryyz0q866.0.1.1.0.0.0.0.0"><span data-reactid=".18ryyz0q866.0.1.1.0.0.0.0.0.0">影片</span><span class="mn" data-reactid=".18ryyz0q866.0.1.1.0.0.0.0.0.1"><span data-reactid=".18ryyz0q866.0.1.1.0.0.0.0.0.1.0"> (点击 </span><span class="sprite sprite-tiny-star" data-reactid=".18ryyz0q866.0.1.1.0.0.0.0.0.1.1"></span><span data-reactid=".18ryyz0q866.0.1.1.0.0.0.0.0.1.2"> 优先展示)</span></span></div></th><th data-reactid=".18ryyz0q866.0.1.1.0.0.0.1"><div class="theader" data-reactid=".18ryyz0q866.0.1.1.0.0.0.1.0">综合票房(万)</div></th><th data-reactid=".18ryyz0q866.0.1.1.0.0.0.2"><div class="theader" data-reactid=".18ryyz0q866.0.1.1.0.0.0.2.0">票房占比</div></th><th data-reactid=".18ryyz0q866.0.1.1.0.0.0.3"><div class="theader" data-reactid=".18ryyz0q866.0.1.1.0.0.0.3.0">排片场次</div></th><th data-reactid=".18ryyz0q866.0.1.1.0.0.0.4"><div class="theader" data-reactid=".18ryyz0q866.0.1.1.0.0.0.4.0">排片占比</div></th><th data-reactid=".18ryyz0q866.0.1.1.0.0.0.5"><div class="theader" data-reactid=".18ryyz0q866.0.1.1.0.0.0.5.0">场均人次</div></th><th data-reactid=".18ryyz0q866.0.1.1.0.0.0.6"><div class="theader" data-reactid=".18ryyz0q866.0.1.1.0.0.0.6.0">上座率</div></th></tr></thead></table><div class="movielist-container" data-reactid=".18ryyz0q866.0.1.1.1"><div class="movielist" data-reactid=".18ryyz0q866.0.1.1.1.0"></div></div></div></div></div></div><script type="text/javascript" id=".18ryyz0q866.script">
+        if (!document.querySelector) throw new Error("react-dom-stream requires document.querySelector. If using IE8 or IE9, please make sure you are in standards mode by including <!DOCTYPE html>");
+        document.querySelector('[data-reactid=".18ryyz0q866"]').setAttribute("data-react-checksum", -1140726820);
+        var s = document.getElementById(".18ryyz0q866.script");
+        s.parentElement.removeChild(s);
+      </script></div>
+    <script>var AppData = {"$title":"猫眼专业版-实时票房","host":"https:\u002F\u002Fbox.maoyan.com","calendar":{"today":"2017-11-11","selectMinDate":"2011-01-01","selectDate":"2017-11-11","selectMaxDate":"2017-11-26"},"$query":{},"$config":{"sentry":{"api":"http:\u002F\u002Fsentry7.sankuai.com\u002F81","appId":"7ca46ff13ccc4bb68f308d890ee47552","appSecret":"b504d937d8ca44a6b9e276dc6ea090c1","disable":false}},"$renderTime":1510361629200};</script>
+    <script>
+      window.felisConfig = {
+        debug: false,
+        combo: '//mc.meituan.net/combo/?f=',
+        modules: [{"m":"\u002Fmodules\u002F@myfe\u002Ffelis-lib.js","v":"f0a47f6c","s":134324},{"m":"\u002Fcommon\u002Fpage.js","v":"9fbc7ccc","s":1453},{"m":"\u002Fcomponents\u002Fclock.js","v":"389dde2b","s":1758},{"m":"\u002Fvendor\u002Fsolarlunar.js","v":"62c996c8","s":12433},{"m":"\u002Fcommon\u002Ffestival.js","v":"b4becd30","s":931},{"m":"\u002Fcomponents\u002Fcalendar-pc.js","v":"185ddd6b","s":7217},{"m":"\u002Fcomponents\u002Fstopwatch.js","v":"8f2d70f8","s":2394},{"m":"\u002Fmodules\u002Fsuperagent.js","v":"043bc527","s":11262},{"m":"\u002Fcommon\u002Frequest.js","v":"ea3d3803","s":1204},{"m":"\u002Fcommon\u002Futil.js","v":"e1b6de13","s":1244},{"m":"\u002Fcommon\u002Ffullscreen.js","v":"72b1ebb4","s":719},{"m":"\u002Fpages\u002Fdashboard.js","v":"c5522557","s":13860}],
+        comboPrefix: '/piaofang/react',
+      };
+      window.pageId = 'DashboardController';
+    </script>
+    
+    <script src="//ms0.meituan.net/piaofang/react/stat-6135315b.js" async></script>
+    
+    <script src="//ms0.meituan.net/piaofang/react/felis-eda0f637.js" async></script>
+    
+  </body>
+</html>
