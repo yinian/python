@@ -42,4 +42,4 @@ $env:FLASK_APP=".\main.py" | flask run
 
 http://127.0.0.1:5000
 
-![图片](./project_1/imgs/01.png)
+![图片](https://github.com/yinian/python/blob/master/left_Mongodb_right_Redis/chapter_04/project_1/imgs/01.png)
